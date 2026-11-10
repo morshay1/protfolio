@@ -1,0 +1,25 @@
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: "Kapakana", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: clamp(5rem, 12vw, 10rem);
+    color: #FFB6D5;
+
+    margin: 0;
+    z-index: 2;
+
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+/* Reveal logo */
+.hero h1.visible {
+    opacity: 1;
+}

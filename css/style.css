@@ -1,0 +1,150 @@
+:root {
+    --baby-pink: #ffd6e5;
+    --black: #000000;
+    --dark-pink: #b34b7c;
+}
+
+.header-trigger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 99;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: var(--baby-pink);
+    padding: 24px 40px;
+
+    z-index: 100;
+
+    transform: translateY(-100%);
+    transition: transform 0.6s ease;
+}
+
+header.visible {
+    transform: translateY(0);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+nav a, footer p {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+nav a:hover {
+    color: var(--dark-pink);
+}
+
+body {
+    margin: 0;
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 21px;
+    color: var(--baby-pink);
+    text-decoration: none;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+}
+
+footer {
+    background-color: var(--baby-pink);
+    color: var(--black);
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.contact-links a:hover {
+    background-color: var(--dark-pink);
+}
+
+.contact-links a:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.contact-links img {
+    width: 18px;
+    height: 28px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.hero {
+    position: relative;
+
+    height: 100vh;
+    height: 100dvh;
+    flex: none;
+
+    background-color: var(--black);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+#butterfly-animation {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero h1 {
+    position: relative;
+    z-index: 1;
+
+    font-family: "Kapakana", cursive;
+    font-weight: 400;
+    font-size: 200px;
+    color: var(--baby-pink);
+    margin: 0;
+
+    opacity: 0;
+}
