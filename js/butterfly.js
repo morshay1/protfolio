@@ -8,7 +8,7 @@ const BUTTERFLY_FILES = [
     "7.png"
 ];
 
-const BUTTERFLY_COUNTS = [5,5,5,5,5,5,10];
+const BUTTERFLY_COUNTS = [5,5,10,5,5,5,10];
 const FLY_SPEED = 0.5;
 
 function getStartingPosition(width, height) {

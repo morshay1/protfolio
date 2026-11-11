@@ -53,7 +53,9 @@ nav a:hover {
 
 body {
     margin: 0;
-    font-family: "Frank Ruhl Libre", serif;
+    font-family: "Playpen Sans Hebrew", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
     font-size: 21px;
     color: var(--baby-pink);
     text-decoration: none;
